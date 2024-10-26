@@ -15,6 +15,7 @@
             display: flex; /* Flexbox para centralização */
             align-items: center; /* Centraliza verticalmente */
             justify-content: center; /* Centraliza horizontalmente */
+            flex-direction: column; /* Alinha os itens em coluna */
         }
         .container {
             background-color: #ffffff; /* Fundo branco para o conteúdo */
@@ -45,18 +46,13 @@
         .button-container:hover {
             background-color: #76c976; /* Muda a cor ao passar o mouse */
         }
-        .button-description {
-            margin-top: 5px;
-            font-size: 0.8em;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">MH hosting</div>
         <div class="subtitle">Melhor hospedagem</div>
-        <a href="#planos" class="button-container">Começar</a>
-        <div class="button-description">Botão para levar para a página de planos</div>
+        <a href="planos.html" class="button-container">Ver Planos</a> <!-- Link para a página de planos -->
     </div>
 </body>
 </html>
