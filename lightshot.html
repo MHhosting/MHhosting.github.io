@@ -24,10 +24,16 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
+            animation: flash 0.2s infinite;
         }
         .jumpscare img {
             width: 60%;
             max-width: 800px;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
@@ -35,7 +41,7 @@
     <h1>Aguarde, carregando...</h1>
 
     <div class="jumpscare">
-        <img src="https://images.app.goo.gl/b7cXkCyzGeMRu3RFA" alt="Jumpscare">
+        <img src="https://images.app.goo.gl/mLBcyTy6jkTW8Vg96" alt="Jumpscare">
     </div>
 
 
@@ -45,11 +51,10 @@
             const jumpscare = document.querySelector('.jumpscare');
             const screamSound = document.getElementById('scream-sound');
 
-            // Mostra a imagem e toca o som
+            // Mostra a imagem piscando e toca o som
             jumpscare.style.display = 'flex';
             screamSound.play();
         }, 3000); // 3000 ms = 3 segundos
-
     </script>
 </body>
 </html>
