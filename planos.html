@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - MHhosting</title>
+    <style>
+        body {
+            background-color: #b3ecff; /* Cor azul clara de fundo */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000; /* Cor do texto */
+            margin: 0; /* Remove a margem padrão */
+            display: flex; /* Flexbox para centralização */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            flex-direction: column; /* Alinha os itens em coluna */
+        }
+        .container {
+            background-color: #ffffff; /* Fundo branco para o conteúdo */
+            padding: 40px; /* Espaçamento interno */
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            max-width: 800px; /* Largura máxima */
+            width: 100%; /* Largura completa até o máximo */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .plan {
+            background-color: #f0f0f0; /* Fundo cinza claro para cada plano */
+            border: 1px solid #ddd; /* Borda leve */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px;
+            margin: 10px 0; /* Margem entre planos */
+        }
+        .plan h2 {
+            margin: 10px 0;
+        }
+        .plan p {
+            margin: 5px 0;
+        }
+        .button-container {
+            background-color: #90ee90; /* Cor verde do botão */
+            border-radius: 20px;
+            padding: 15px 30px;
+            display: inline-block;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.3s ease;
+        }
+        .button-container:hover {
+            background-color: #76c976; /* Muda a cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planos de Hospedagem</h1>
+        
+        <div class="plan">
+            <h2>Plano Básico</h2>
+            <p>Preço: R$ 29,90/mês</p>
+            <p>Recursos: 1GB de espaço, 10GB de tráfego, suporte básico.</p>
+            <a href="#contratar" class="button-container">Contratar</a>
+        </div>
+
+        <div class="plan">
+            <h2>Plano Intermediário</h2>
+            <p>Preço: R$ 49,90/mês</p>
+            <p>Recursos: 5GB de espaço, 50GB de tráfego, suporte prioritário.</p>
+            <a href="#contratar" class="button-container">Contratar</a>
+        </div>
+
+        <div class="plan">
+            <h2>Plano Avançado</h2>
+            <p>Preço: R$ 99,90/mês</p>
+            <p>Recursos: 20GB de espaço, tráfego ilimitado, suporte premium.</p>
+            <a href="#contratar" class="button-container">Contratar</a>
+        </div>
+    </div>
+</body>
+</html>
